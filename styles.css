@@ -66,7 +66,6 @@
   font-style: italic;
 }
 
-
 @font-face {
   font-family: 'Poppins';
   src: url('fonts/Poppins-SemiBold.ttf') format('truetype');
@@ -88,89 +87,86 @@
   font-style: italic;
 }
 
-
-
 /* HEADER + NAVIGATION */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .nav-links a {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 25.54px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000000;
-    transition: color 0.3s ease;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 25.54px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FF006F;
+  color: #FF006F;
 }
 
 header img {
-    height: 161px;
-    width: 161px;
+  height: 161px;
+  width: 161px;
 }
 
 /* CATEGORIES SECTION */
 .categories {
-    margin: 0px 40px 20px 40px;
+  margin: 0px 40px 20px 40px;
 }
 
 .category-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
 }
 
 .category-table th {
-    border: 3.5px solid #C9C9C9;
-    background-color: #000;
-    color: #ffffff;
-    padding: 10px;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 400;
-    letter-spacing: -2px;
-    font-size: 37.23px;
-    text-align: left;
-    line-height: 50px;
+  border: 3.5px solid #C9C9C9;
+  background-color: #000;
+  color: #ffffff;
+  padding: 10px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  letter-spacing: -2px;
+  font-size: 37.23px;
+  text-align: left;
+  line-height: 50px;
 }
 
 .category-table td {
-    border: 3.5px solid #C9C9C9;
-    padding: 12px;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 400;
-    letter-spacing: -2%;
-    line-height: 18.6px;
-    font-size: 23.27px;
-    text-align: center;
+  border: 3.5px solid #C9C9C9;
+  padding: 12px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  letter-spacing: -2%;
+  line-height: 18.6px;
+  font-size: 23.27px;
+  text-align: center;
 }
 
 .category-table th,
 .category-table td {
-    width: 22.2%;
+  width: 22.2%;
 }
 
-/* BODY*/
-
+/* BODY */
 body {
   background: linear-gradient(to bottom, #FFFFFF 60%, #999999 100%);
   margin: 0;
@@ -178,17 +174,16 @@ body {
 }
 
 /* MAIN */
-
 main {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; 
+  gap: 20px;
   padding: 20px;
 }
 
-/* LEFT COLUMN */
 
+/* LEFT COLUMN */
 .left-section {
   display: inline-block;
   vertical-align: top;
@@ -196,25 +191,34 @@ main {
   padding: 20px;
 }
 
-.left-section h1 {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 56px;
-  font-weight: 800;
-  font-display: block;
-  letter-spacing: -6px;
-  margin-top: 0%;
-  margin-bottom: -30px;
+/* Hero container to link h1 + image */
+.hero-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-container .hero-image {
+  width: 97%;
+  height: auto;
+  margin-bottom: 15px;
   margin-left: 20px;
+  display: block;
+}
+
+.left-section h1 {
+  font-family: 'LeagueSpartan', sans-serif;
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: -40px;
+  margin-left: 20px;
+  line-height: 1.05;
   position: relative;
   z-index: 1;
   white-space: nowrap;
-}
-
-.left-section .hero-image {
-  width: 97%;
-  height: 75%;
-  margin-bottom: 15px;
-  margin-left: 20px;
 }
 
 .left-section p {
@@ -229,21 +233,22 @@ main {
 }
 
 /* RIGHT COLUMN */
-
 .right-section {
-  display: inline-block;     
-  vertical-align: top;      
+  display: inline-block;
+  vertical-align: top;
   width: 48%;
-  margin-left: 0%;       
+  margin-left: 0%;
+  margin-top: 0.5%;
   color: #000000;
 }
 
 .right-section hr {
-  border: none;       
+  border: none;
   border-top: 2px solid #000000;
-  margin: 10px 0;            
-  width: 100%;                
+  margin: 10px 0;
+  width: 100%;
 }
+
 .right-section h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 43px;
@@ -274,17 +279,15 @@ main {
 }
 
 /* AUTHOR'S FAV */
-
 .favorite-album {
-  display: inline-block;     
-  vertical-align: top;      
+  display: inline-block;
+  vertical-align: top;
   width: 48%;
-  margin-left: 0%;       
+  margin-left: 0%;
   color: #000000;
   position: relative;
   align-items: flex-start;
   justify-content: flex-start;
-  
 }
 
 .favorite-album h4 {
@@ -300,8 +303,8 @@ main {
 }
 
 .favorite-album img {
-  width: 234px;
-  height: 236px;
+  width: 300px;
+  height: 300px;
 }
 
 .favorite-album .backshots {
@@ -311,10 +314,9 @@ main {
   box-shadow: inset 0px 5.45px 11.59px rgba(0, 0, 0, 0.25);
 }
 
-
 .favorite-album .vinyl {
   position: absolute;
-  top: 55px;
+  top: 65px;
   left: 115px;
   z-index: 1;
   filter: drop-shadow(6.82px 5.45px 11.59px rgba(0, 0, 0, 0.25));
@@ -324,7 +326,7 @@ main {
 
 .album-info {
   position: absolute;
-  top: 750px;
+  top: 700px;
   right: 30px;
   display: flex;
   flex-direction: column;
@@ -348,7 +350,7 @@ main {
   margin: 0;
   font-size: 11px;
   line-height: 1;
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   letter-spacing: 1px;
 }
 
@@ -362,14 +364,212 @@ main {
   letter-spacing: -1px;
 }
 
-/* FOOTER STYLES */
+/* --- ABOUT SECTION --- */
+.about {
+  padding: 20px 75px;
+  padding-top: 0px;
+} 
 
+.about h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 91px;
+  letter-spacing: -4px;
+  margin-bottom: 5px;
+  margin-top: 0%;
+}
+
+.about p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-top: 0%;
+  text-align: left;
+}
+
+/* --- GENRES SECTION --- */
+.genres {
+  padding: 25px 75px;
+  padding-top: 0px;
+}
+
+.genres h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 91px;
+  font-weight: 800;
+  letter-spacing: -4px;
+  margin-bottom: 5px;
+  margin-top: 0%;
+}
+
+.genres p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-top: 0%;
+  text-align: left;
+}
+
+
+/* GENRES TABLE  */
+.genres-table {
+  width: 1247px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin-bottom: -70px;
+}
+
+.genres-table td {
+  border: 1px solid #000;
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'League Spartan', sans-serif;
+  vertical-align: top;
+  margin-top: 1px; 
+}
+
+.genres-table td strong {
+  display: block;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 0%; 
+}
+
+
+/* Music Form Section */
+.music-form-container {
+  background-color: #0057ff;
+  border-radius: 5.49px;
+  border: 1.65px solid #000000;
+  width: 1246px;
+  margin: 149px auto;
+  padding: 25px 30px;
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.music-form-container h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #000000;
+  margin: 0;
+}
+
+.music-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.music-form label {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.music-form select,
+.music-form input[type="text"] {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 15px;
+  outline: none;
+  width: 250px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+button {
+  background-color: white;
+  color: #0057ff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 20px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #FF006F;
+}
+
+/* --- PLAYLISTS SECTION */
+
+.playlists {
+  padding: 25px 75px;
+  padding-top: 0px;
+}
+
+.playlists h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 91px;
+  letter-spacing: -4px;
+  margin-bottom: 5px;
+  margin-top: 0%;
+}
+
+.playlists p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-top: 0%;
+  text-align: left;
+}
+
+
+/* --- CONTACT US PAGE --- */
+.contact {
+  padding: 25px 75px;
+  padding-top: 0px;
+}
+
+.contact h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 91px;
+  letter-spacing: -4px;
+  margin-bottom: 5px;
+  margin-top: 0%;
+}
+
+.contact p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-top: 0%;
+  text-align: left;
+}
+
+/* FOOTER STYLES */
 footer {
   text-align: center;
   padding: 10px 0;
-  border-top: 2px solid #000000; 
+  border-top: 2px solid #000000;
   width: 90%;
-  margin: 0 auto; 
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -390,10 +590,9 @@ footer {
   font-weight: bold;
   font-style: italic;
   font-size: 13px;
-
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
   color: #FF006F;
 }
 
@@ -407,3 +606,44 @@ footer {
 .footer-links a:hover img {
   filter: brightness(0) saturate(100%) invert(19%) sepia(95%) saturate(7477%) hue-rotate(320deg) brightness(100%) contrast(104%);
 }
+
+/* DESKTOP MEDIA QUERY
+@media (min-width: 1024px) {
+  .left-section {
+    width: 50%;
+  }
+
+  .hero-container h1 {
+    font-size: 75px;
+    top: 10px;
+    left: 45px;
+    bottom: auto;
+  }
+
+  .hero-container .hero-image {
+    width: 96%;
+    height: auto;
+  }
+
+  .right-section h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+  }
+
+  .right-section hr {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .favorite-album {
+    margin-left: 0%;
+  }
+
+  .favorite-album h4 {
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+
+  
+} */
