@@ -414,10 +414,13 @@ main {
 
 /* GENRES TABLE  */
 .genres-table {
-  width: 1247px;
+  width: 90vw; 
+  max-width: 1500px;
   border-collapse: collapse;
   border: 1px solid #000;
+  margin: 0 auto;
   margin-bottom: -70px;
+  margin-left: 90px;
 }
 
 .genres-table td {
@@ -440,79 +443,98 @@ main {
 
 /* Music Form Section */
 .music-form-container {
-  background-color: #0057ff;
-  border-radius: 5.49px;
-  border: 1.65px solid #000000;
-  width: 1246px;
-  margin: 149px auto;
-  padding: 25px 30px;
-  color: white;
-  font-family: 'League Spartan', sans-serif;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  position: relative;
+  background-color: #0555FF;
+  border: 1.65px solid black;
+  border-radius: 10px;
+  margin-top: 140px;
+  margin-left: 90px;
+  height: 240px;
 }
 
 .music-form-container h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  position: absolute;
-  top: -50px;
-  right: 5px;
   font-weight: 500;
-  letter-spacing: -2px;
-  color: #000000;
-  margin: 0;
+  font-size: 35px;
+  letter-spacing: -3px;
+  text-align: right;
+  margin-top: -60px;
 }
 
-.music-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.music-form label {
-  font-weight: 500;
+.form-group label {
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
+  color: #ffffff;
+  line-height: 26px;
+  margin-left: 310px;
 }
 
-.music-form select,
-.music-form input[type="text"] {
-  border: none;
-  border-radius: 4px;
-  padding: 5px 8px;
-  font-size: 15px;
-  outline: none;
-  width: 250px;
+.form-group select {
+  margin-left: 305px;
+  width: 410px;
+}
+
+.form-group option {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
 }
 
 .radio-group {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px; 
+  margin-left: 255px; 
+}
+
+.second-radio-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; 
+  margin-left: 60px; 
 }
 
 .radio-group label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
-  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
-button {
+.radio-group input[type="radio"] {
+  margin: 0 10px 0 0; 
+  accent-color: #ffffff;
+}
+
+.radio-group input[type="radio"]:checked {
+  accent-color: #FF4D00;
+}
+
+.form-group input[type="text"] {
+  width: 380px;
+  padding: 10px 15px;
+  margin-left: 100px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.submit-btn {
   background-color: white;
   color: #0057ff;
   border: none;
-  border-radius: 4px;
-  font-size: 13px;
+  border-radius: 10px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 5px 20px;
+  padding: 6px 30px;
   cursor: pointer;
-  align-self: flex-start;
+  display: block;
+  margin: 50px auto -40px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
+.submit-btn:hover {
   background-color: #FF006F;
+  color: white;
 }
 
 /* --- PLAYLISTS SECTION */
@@ -607,43 +629,3 @@ footer {
   filter: brightness(0) saturate(100%) invert(19%) sepia(95%) saturate(7477%) hue-rotate(320deg) brightness(100%) contrast(104%);
 }
 
-/* DESKTOP MEDIA QUERY
-@media (min-width: 1024px) {
-  .left-section {
-    width: 50%;
-  }
-
-  .hero-container h1 {
-    font-size: 75px;
-    top: 10px;
-    left: 45px;
-    bottom: auto;
-  }
-
-  .hero-container .hero-image {
-    width: 96%;
-    height: auto;
-  }
-
-  .right-section h2 {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-right: 40px;
-  }
-
-  .right-section hr {
-    font-size: 40px;
-    margin-bottom: 50px;
-  }
-
-  .favorite-album {
-    margin-left: 0%;
-  }
-
-  .favorite-album h4 {
-    margin-top: 0%;
-    margin-bottom: 5%;
-  }
-
-  
-} */
