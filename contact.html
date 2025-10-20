@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact US</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -16,21 +17,47 @@
             <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
-    <img src="" alt="Tunes For You Logo" class="">
+    <img src="imgs/logo.png" alt="Tunes For You Logo" class="">
   </header>
 
   <main>
-    <section>
+    <section class="contact">
         <h1>CONTACT US</h1>
         <p>Got a playlist suggestion, song request, or just wanna say hi? Drop us a message below!</p>
+        <div class="contact-form-container">
+          <img src="imgs/contact-pic.jfif">
+          <form class="contact-form">
+            <h2>Contact form</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="phone">Phone No.</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="youremail@example.com">
+
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option>Song Suggestion</option>
+              <option>Feedback</option>
+              <option>Request</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+          </form>
+        </div>
+
+        <button type="submit" class="contact-subm-btn">Submit</button>
     </section>
   </main>
 
   <footer>
     <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/leewel-tumang-4b4969380/">LinkedIn</a>
-      <a href="https://www.instagram.com/illicitplaya?igsh=MWZ1cXV5ajg4dnVxZA%3D%3D&utm_source=qr">Instagram</a>
+      <a href="https://www.linkedin.com/in/leewel-tumang-4b4969380/"><img src= "imgs/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/illicitplaya?igsh=MWZ1cXV5ajg4dnVxZA%3D%3D&utm_source=qr"><img src="imgs/instagram.png" alt="Instagram"></a>
       <a href="mailto:tunesforyou.com">tunesforyou.com</a>
     </div>
   </footer>
