@@ -479,7 +479,7 @@ main {
   border-radius: 10px;
   margin-top: 140px;
   margin-left: -80px;
-  height: 240px;
+  height: 190px;
 }
 
 .music-form-container h3 {
@@ -498,7 +498,6 @@ main {
   color: #ffffff;
   line-height: 26px;
   margin-left: 150px;
-  margin-bottom: 10px;
 }
 
 .form-group select {
@@ -559,7 +558,7 @@ main {
   padding: 6px 30px;
   cursor: pointer;
   display: block;
-  margin: 105px auto -50px; 
+  margin: 55px auto -50px; 
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
@@ -858,4 +857,3 @@ footer {
 .footer-links a:hover img {
   filter: brightness(0) saturate(100%) invert(19%) sepia(95%) saturate(7477%) hue-rotate(320deg) brightness(100%) contrast(104%);
 }
-
