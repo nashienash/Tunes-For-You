@@ -1667,8 +1667,16 @@ footer {
     display: none;
   }
 
-  .categories {
-    display: none;
+  .categories h1 {
+    display: inline-block;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    margin-right: 1px;
+    margin-top: 150px;
+    line-height: 1.1;
+    margin-bottom: 0px;
   }
 
   /* HEADER + NAVIGATION - STICKY */
