@@ -1670,7 +1670,7 @@ footer {
   .categories h1 {
     display: inline-block;
     font-size: 30px;
-    text-align: left;
+    text-align: auto;
     letter-spacing: -1px;
     white-space: nowrap;
     margin-left: -2px;
