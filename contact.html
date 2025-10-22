@@ -3,62 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact US</title>
+  <title>Contact Us</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imgs/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="imgs/android-chrome-192x192.png" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="hamburger mobile-only" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="genres.html">Genres</a></li>
-            <li><a href="playlists.html">Playlists</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="playlists.html">Playlists</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <div class="overlay-footer">
+        <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+        <a href="mailto:nashnicio@gmail.com" style="color: #0057ff; text-decoration: none;">tunesforyou.com</a>
+      </div>
+      <div class="close-menu" onclick="toggleMenu()"></div>
     </nav>
-    <img src="imgs/logo.png" alt="Tunes For You Logo" class="">
+    <a href="index.html"><img src="imgs/logo.png" alt="Tunes For You Logo"></a>
   </header>
-
   <main>
     <section class="contact">
-        <h1>CONTACT US</h1>
-        <p>Got a playlist suggestion, song request, or just wanna say hi? Drop us a message below!</p>
+      <h1>CONTACT US</h1>
+      <p>Got a playlist suggestion, song request, or just wanna say hi? Drop us a message below!</p>
+      <div class="tablet-desktop">
         <div class="contact-form-container">
-          <img src="imgs/contact-pic.jfif">
-          <form class="contact-form">
+          <img src="imgs/contact-pic.jfif" alt="Contact Us" class="tablet-desktop">
+          <form class="contact-form" action="#" method="post">
             <h2>Contact form</h2>
+            
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
             <label for="phone">Phone No.</label>
-            <input type="text" id="phone" placeholder="Enter your phone number">
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
 
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="youremail@example.com">
+            <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
 
             <label for="subject">Subject</label>
-            <select id="subject">
-              <option>Song Suggestion</option>
-              <option>Feedback</option>
-              <option>Request</option>
+            <select id="subject" name="subject">
+              <option value="song-suggestion">Song Suggestion</option>
+              <option value="feedback">Feedback</option>
+              <option value="request">Request</option>
             </select>
 
             <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit" class="contact-subm-btn">Submit</button>
           </form>
         </div>
-
-        <button type="submit" class="contact-subm-btn">Submit</button>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+    <p>&copy; 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/leewel-tumang-4b4969380/"><img src= "imgs/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/illicitplaya?igsh=MWZ1cXV5ajg4dnVxZA%3D%3D&utm_source=qr"><img src="imgs/instagram.png" alt="Instagram"></a>
-      <a href="mailto:tunesforyou.com">tunesforyou.com</a>
+      <a href="https://www.linkedin.com/in/leewel-tumang-4b4969380/" target="_blank" rel="noopener noreferrer"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/illicitplaya?igsh=MWZ1cXV5ajg4dnVxZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" alt="Instagram"></a>
+      <a href="mailto:nashnicio@gmail.com">tunesforyou.com</a>
     </div>
   </footer>
 </body>
