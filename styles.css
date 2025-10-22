@@ -1673,7 +1673,7 @@ footer {
     text-align: auto;
     letter-spacing: -1px;
     white-space: nowrap;
-    margin-left: -2px;
+    margin-left: 0;
     margin-top: 150px;
     line-height: 1.1;
     margin-bottom: 0px;
