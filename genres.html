@@ -5,127 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Genres</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imgs/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="imgs/android-chrome-192x192.png" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="hamburger mobile-only" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="genres.html">Genres</a></li>
-            <li><a href="playlists.html">Playlists</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="playlists.html">Playlists</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <div class="overlay-footer">
+        <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+        <a href="mailto:nashnicio@gmail.com" style="color: #0057ff; text-decoration: none;">tunesforyou.com</a>
+      </div>
+      <div class="close-menu" onclick="toggleMenu()"></div>
     </nav>
-    <img src="imgs/logo.png" alt="Tunes For You Logo" class="">
+    <a href="index.html"><img src="imgs/logo.png" alt="Tunes For You Logo"></a>
   </header>
 
   <main>
     <section class="genres">
-        <h1>GENRES</h1>
-        <p>An introduction to various music genres and the unique styles they offer.</p>
-
-        <table class="genres-table">
-            <tr>
-                <td><strong>Pop</strong><br>Catchy, chart-topping hits.</td>
-                <td><strong>Hip-Hop / Rap</strong><br>Rhythmic beats and lyrical flows.</td>
-                <td><strong>Rock</strong><br>Guitar-driven classics and modern hits.</td>
-            </tr>
-            <tr>
-                <td><strong>R&B</strong><br>Smooth vocals and groovy rhythms.</td>
-                <td><strong>Country</strong><br>Storytelling songs with heart.</td>
-                <td><strong>Jazz</strong><br>Timeless, soulful melodies.</td>
-            </tr>
-            <tr>
-                <td><strong>Reggae</strong><br>Laid-back, island-inspired vibes.</td>
-                <td><strong>Classical</strong><br>Orchestral and instrumental masterpieces.</td>
-                <td><strong>Blues</strong><br>Emotional, expressive tunes.</td>
-            </tr>
-            <tr>
-                <td><strong>Metal</strong><br>Heavy riffs and powerful energy.</td>
-                <td><strong>Alternative</strong><br>Unique sounds outside the mainstream.</td>
-                <td><strong>Indie</strong><br>Creative, independent music vibes.</td>
-            </tr>
-            <tr>
-                <td><strong>Folk</strong><br>Acoustic storytelling and traditions.</td>
-                <td><strong>Soul</strong><br>Deeply emotional and powerful vocals.</td>
-                <td><strong>Gospel</strong><br>Uplifting and spiritual melodies.</td>
-            </tr>
-            <tr>
-                <td><strong>Latin</strong><br>Danceable rhythms and catchy beats.</td>
-                <td><strong>K-Pop</strong><br>Popular Korean pop music.</td>
-                <td><strong>Punk</strong><br>Fast-paced, rebellious tracks.</td>
-            </tr>
-        </table>
+      <h1>GENRES</h1>
+      <p>An introduction to various music genres and the unique styles they offer.</p>
+      <div class="tablet-desktop">
+      <table class="genres-table">
+        <tbody>
+          <tr>
+            <td><strong>Pop</strong> Catchy, chart-topping hits.</td>
+            <td><strong>Hip-Hop / Rap</strong> Rhythmic beats and lyrical flows.</td>
+            <td><strong>Rock</strong> Guitar-driven classics and modern hits.</td>
+          </tr>
+          <tr>
+            <td><strong>R&B</strong> Smooth vocals and groovy rhythms.</td>
+            <td><strong>Country</strong> Storytelling songs with heart.</td>
+            <td><strong>Jazz</strong> Timeless, soulful melodies.</td>
+          </tr>
+          <tr>
+            <td><strong>Reggae</strong> Laid-back, island-inspired vibes.</td>
+            <td><strong>Classical</strong> Orchestral and instrumental masterpieces.</td>
+            <td><strong>Blues</strong> Emotional, expressive tunes.</td>
+          </tr>
+          <tr>
+            <td><strong>Metal</strong> Heavy riffs and powerful energy.</td>
+            <td><strong>Alternative</strong> Unique sounds outside the mainstream.</td>
+            <td><strong>Indie</strong> Creative, independent music vibes.</td>
+          </tr>
+          <tr>
+            <td><strong>Folk</strong> Acoustic storytelling and traditions.</td>
+            <td><strong>Soul</strong> Deeply emotional and powerful vocals.</td>
+            <td><strong>Gospel</strong> Uplifting and spiritual melodies.</td>
+          </tr>
+          <tr>
+            <td><strong>Latin</strong> Danceable rhythms and catchy beats.</td>
+            <td><strong>K-Pop</strong> Popular Korean pop music.</td>
+            <td><strong>Punk</strong> Fast-paced, rebellious tracks.</td>
+          </tr>
+        </tbody>
+      </table>
 
         <div class="music-form-container">
-            <h3>Tell us about your music taste!</h3>
-            <form class="music-form">
-                <div class="form-group">
-                    <label>What’s your favorite genre?</label>
-                    <select>
-                        <option>Pop</option>
-                        <option selected>Hip-Hop / Rap</option>
-                        <option>Rock</option>
-                        <option>R&B</option>
-                        <option>Country</option>
-                        <option>Jazz</option>
-                        <option>Reggae</option>
-                        <option>Classical</option>
-                        <option>Blues</option>
-                        <option>Metal</option>
-                        <option>Alternative</option>
-                        <option>Indie</option>
-                        <option>Folk</option>
-                        <option>Soul</option>
-                        <option>Gospel</option>
-                        <option>Latin</option>
-                        <option>K-Pop</option>
-                        <option>Punk</option>
-                    </select>
-                </div>
-
-                <br>
-
+          <h3>Tell us about your music taste!</h3>
+          <form class="music-form" action="#" method="post">
             <div class="form-group">
-                <label>How often do you listen to music?</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="freq">     Daily</label>
-                        <label><input type="radio" name="freq"> A few times a week</label>
-                        <label><input type="radio" name="freq"> Occasionally</label>
-                    </div>
+              <label for="favorite-genre">What's your favorite genre?</label>
+              <select id="favorite-genre" name="favorite-genre">
+                <option value="pop">Pop</option>
+                <option value="hip-hop" selected>Hip-Hop / Rap</option>
+                <option value="rock">Rock</option>
+                <option value="rnb">R&B</option>
+                <option value="country">Country</option>
+                <option value="jazz">Jazz</option>
+                <option value="reggae">Reggae</option>
+                <option value="classical">Classical</option>
+                <option value="blues">Blues</option>
+                <option value="metal">Metal</option>
+                <option value="alternative">Alternative</option>
+                <option value="indie">Indie</option>
+                <option value="folk">Folk</option>
+                <option value="soul">Soul</option>
+                <option value="gospel">Gospel</option>
+                <option value="latin">Latin</option>
+                <option value="kpop">K-Pop</option>
+                <option value="punk">Punk</option>
+              </select>
             </div>
 
-            <br>
-
             <div class="form-group">
-                <label>Do you prefer curating playlists or exploring songs yourself?</label>
-                    <div class="radio-group second-radio-group">
-                        <label><input type="radio" name="style"> Playlists</label>
-                        <label><input type="radio" name="style"> Explore</label>
-                        <label><input type="radio" name="style"> Both</label>
-                    </div>
+              <label>How often do you listen to music?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="freq" value="daily"> Daily</label>
+                <label><input type="radio" name="freq" value="few-times"> A few times a week</label>
+                <label><input type="radio" name="freq" value="occasionally"> Occasionally</label>
+              </div>
             </div>
 
-            <br>
-
             <div class="form-group">
-                <label>Any genres you’d like to see more of on Tunes For You?</label>
-                <input type="text" placeholder="Type your suggestions here!">
+              <label>Do you prefer curating playlists or exploring songs yourself?</label>
+              <div class="radio-group second-radio-group">
+                <label><input type="radio" name="style" value="playlists"> Playlists</label>
+                <label><input type="radio" name="style" value="explore"> Explore</label>
+                <label><input type="radio" name="style" value="both"> Both</label>
+              </div>
             </div>
 
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
+            <div class="form-group">
+              <label for="genre-suggestions">Any genres you'd like to see more of on Tunes For You?</label>
+              <input type="text" id="genre-suggestions" name="genre-suggestions" placeholder="Type your suggestions here!">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
         </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+    <p>&copy; 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/leewel-tumang-4b4969380/"><img src= "imgs/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/illicitplaya?igsh=MWZ1cXV5ajg4dnVxZA%3D%3D&utm_source=qr"><img src="imgs/instagram.png" alt="Instagram"></a>
-      <a href="mailto:tunesforyou.com">tunesforyou.com</a>
+      <a href="https://www.linkedin.com/in/leewel-tumang-4b4969380/" target="_blank" rel="noopener noreferrer"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/illicitplaya?igsh=MWZ1cXV5ajg4dnVxZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" alt="Instagram"></a>
+      <a href="mailto:nashnicio@gmail.com">tunesforyou.com</a>
     </div>
   </footer>
 </body>
