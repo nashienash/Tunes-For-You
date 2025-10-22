@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imgs/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="imgs/android-chrome-192x192.png" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="hamburger mobile-only" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -16,6 +26,11 @@
         <li><a href="playlists.html">Playlists</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <div class="overlay-footer">
+        <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+        <a href="mailto:nashnicio@gmail.com" style="color: #0057ff; text-decoration: none;">tunesforyou.com</a>
+      </div>
+      <div class="close-menu" onclick="toggleMenu()"></div>
     </nav>
     <a href="index.html"><img src="imgs/logo.png" alt="Tunes For You Logo"></a>
   </header>
@@ -35,7 +50,7 @@
 
       <script src="https://player.vimeo.com/api/player.js"></script>
 
-      <h2>TUNES FOR YOU</h2>
+      <h1>TUNES FOR YOU</h1>
       <p>Tunes For You is your favorite music hub. We're here to bring you the best tracks, the hottest playlists, and a space where every beat hits just right. Our mission is simple: make discovering and enjoying music easy, fun, and totally for you.</p>
     </section>
   </main>
