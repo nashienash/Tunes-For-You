@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tunes For You</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imgs/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="imgs/android-chrome-192x192.png" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="hamburger mobile-only" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -16,75 +26,59 @@
         <li><a href="playlists.html">Playlists</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <div class="overlay-footer">
+        <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+        <a href="mailto:nashnicio@gmail.com" style="color: #0057ff; text-decoration: none;">tunesforyou.com</a>
+      </div>
+      <div class="close-menu" onclick="toggleMenu()"></div>
     </nav>
     <a href="index.html"><img src="imgs/logo.png" alt="Tunes For You Logo"></a>
   </header>
 
-  <section class="categories">
-    <table class="category-table">
-      <thead>
-        <tr>
-          <th>CHILL VIBES</th>
-          <th>WORKOUT HITS</th>
-          <th>TRENDING NOW</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Relaxing tunes to unwind after a long day</td>
-          <td>Pump up your energy with these tracks</td>
-          <td>The hottest songs everyone's listening to</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <div class="tablet-desktop">
+    <section class="categories">
+      <hr class="tablet-hide-desktop">
+      <h1 class="home">TUNES THAT HIT DIFFERENT</h1>
+      <table class="category-table">
+        <thead>
+          <tr>
+            <th>CHILL VIBES</th>
+            <th>WORKOUT HITS</th>
+            <th>TRENDING NOW</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Relaxing tunes to unwind after a long day</td>
+            <td>Pump up your energy with these tracks</td>
+            <td>The hottest songs everyone's listening to</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
 
-  <main>
-    <div class="tablet">
-      <section class="left-section">
+    <main>
+      <section class="home">
         <div class="hero-container">
-          <h1>TUNES THAT HIT DIFFERENT</h1>
           <img src="imgs/music.png" alt="vinyl-playing" class="hero-image">
-          <p>
-            At Tunes For You, it's all about the vibe. Playlists made to match your mood—whether you're grinding, cruising, or just vibing. Music here feels personal, made just 4 U.
-          </p>
         </div>
-      </section>
-    </div>
-    
-    <div class="tablet-desktop">
-      <section class="right-section">
+
         <h2>Welcome to Tunes For <em>You.</em></h2>
-        <hr>
-        <p>
-          Your personal music escape. discover the hottest tracks, vibe with your favorite artists, and let the rhythm take over. Music made for you, anytime, anywhere.
+        <p class="intro">
+          Your personal music escape. Discover the hottest tracks, vibe with your favorite artists, 
+          and let the rhythm take over. Music made for you, anytime, anywhere. At Tunes For You, it's all about the vibe. Playlists made to match your mood—whether you're grinding, cruising, 
+          or just vibing. Music here feels personal, made just 4 U.
         </p>
 
-        <div class="favorite-album">
-          <h4>Author's Favorite Album</h4>
-          <img src="imgs/backshots.JPG" alt="backshots" class="backshots">
-          <img src="imgs/vinyl.png" alt="vinyl" class="vinyl">
-        </div>
-
-        <div class="album-info">
-          <h5>BACKSHOTS</h5>
-          <h6>Waiian. 2025.</h6>
-          <ul>
-            <li>AUGUST 27</li>
-            <li>MALAKING BIRD</li>
-            <li>MAN IN THE MIRROR</li>
-            <li>Lose My Number</li>
-            <li>Softie (feat. Nicole Anjela)</li>
-            <li>MOTIVATIONAL QUOTES</li>
-            <li>Asan Na Si...</li>
-            <li>Si Lods Na Bahala</li>
-            <li>Bounce Na Ko Man</li>
-          </ul>
-        </div>
+        <aside class="tablet-hide-desktop">
+          <h1>DID YOU KNOW?</h1>
+          <div class="aside-container">
+            <p class="trivia">Music might be one of the oldest forms of human expression! Long before words were invented, early humans were already surrounded by sounds from nature like birds singing, the wind blowing, and rain falling on leaves. These natural rhythms inspired them to clap, stomp, or use sticks and stones to create beats. Archaeologists have even discovered flutes made from bird bones that are over 40,000 years old. Some researchers believe that humans may have sung before they spoke, using music to share feelings, tell stories, or connect with others. In a way, music has been with us since the very beginning!</p>
+          </div>
+        </aside>
       </section>
-    </div>
-  </main>
-
+    </main>
   <footer>
     <p>&copy; 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
     <div class="footer-links">
