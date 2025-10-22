@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playlists</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imgs/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="imgs/android-chrome-192x192.png" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="hamburger mobile-only" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -16,6 +26,11 @@
         <li><a href="playlists.html">Playlists</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <div class="overlay-footer">
+        <p>© 2025 TunesForYou. All rights reserved. Created by Leewel Nash Tumang.</p>
+        <a href="mailto:nashnicio@gmail.com" style="color: #0057ff; text-decoration: none;">tunesforyou.com</a>
+      </div>
+      <div class="close-menu" onclick="toggleMenu()"></div>
     </nav>
     <a href="index.html"><img src="imgs/logo.png" alt="Tunes For You Logo"></a>
   </header>
@@ -23,7 +38,7 @@
   <main>
     <section class="playlists">
       <h1>PLAYLISTS</h1>
-      <p>Here are some of my favorite playlists, curated just for you! Explore, listen, and find the vibe that fits your mood.</p>
+      <p class="tablet-desktop">Here are some of my favorite playlists, curated just for you! Explore, listen, and find the vibe that fits your mood.</p>
       <div class="playlist-grid">
         <div class="card">
           <a href="https://open.spotify.com/playlist/7C8oLk4eS6qVqNrGm71EMT?si=f04052b2193e46c3" target="_blank" rel="noopener noreferrer">
@@ -122,8 +137,10 @@
         </div>
       </div>  
 
-      <div class="quote">
-        <h2>"Music is the universal language of mankind." — Henry Wadsworth Longfellow</h2>
+      <div class="desktop">
+        <div class="quote">
+          <h2>"Music is the universal language of mankind." — Henry Wadsworth Longfellow</h2>
+        </div>
       </div>
     </section>
   </main>
